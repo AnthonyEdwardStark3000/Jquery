@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <h1>Something is Driving towards Perfection</h1>
+    <p>Success</p>
+    <ul>
+        <li>one <a href="google.com">Gl </a> </li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+    <div class="sample">
+       
+       <img src="https://www.cheatsheet.com/wp-content/uploads/2020/11/Marvel-star-Robert-Downey-Jr.jpg">    
+     <img src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/07/09/Pictures/_142fcb3e-c1cd-11ea-bed6-81066a26d6e8.jpg">    
+     </div>
+    <script>
+        let properties=
+        {
+            color:"violet",
+            background:"viven",
+            border:"1px solid black",
+        }
+// Jquery
+$("document").ready(
+    function(){
+        alert("Document is loaded");
+    }
+    ),
+    
+    $("button").click(
+        function(){
+        // console.log("Button is clicked") somthing is fishy over here ..works in console but not here
+        alert("value:"+$("#sometext").val());
+    }
+    )
+
+    $("button").click(function(){$("#sometext").val("Mr.Stark")})
+</script>
+<input type="text" value="" placeholder="Enter something" id="sometext">
+<button>Submit</button>
+<br>
+<hr>
+<style>
+    .stylecheck
+    {
+      border:5px solid green;
+      border-radius: 16px;
+      /* border-color: solid green;   */
+    }
+</style>
+<script>
+    // $("#button1").click(function(){$("img").toggleClass("stylecheck")}) correct code to toggle class on button click
+    $("img").removeClass("stylecheck")
+    $("img").toggleClass("stylecheck")
+</script>
+<h2>ADD CLASS</h2>
+<button id="button1" style="border-radius: 15px;">Click me</button>
+</body>
+</html>
